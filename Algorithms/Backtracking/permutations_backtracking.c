@@ -8,7 +8,7 @@ void init(int* v, int pos) {
 	v[pos] = 0;
 }
 
-int Succesor(int* v, int pos, int n) {
+int Successor(int* v, int pos, int n) {
 	if (v[pos] < n) {
 		v[pos]++;
 		return 1;
@@ -43,7 +43,7 @@ void showPerms(int n) {
 	while (pos >= 0) {
 		int isV = 0, isS = 0;
 		do {
-			isS = Succesor(perm, pos, n);
+			isS = Successor(perm, pos, n);
 			if (isS) {
 				isV = isValid(perm, pos);
 			}
